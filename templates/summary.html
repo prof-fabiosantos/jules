@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}Summary - Expense Tracker{% endblock %}
+
+{% block content %}
+    <h1>Expense Summary</h1>
+    <p>Total Expenses: ${{ "%.2f"|format(total_expenses) }}</p>
+    <!-- <a href="{{ url_for('hello_world') }}">Back to Home</a> --> <!-- Removed, navigation is in base.html -->
+{% endblock %}
